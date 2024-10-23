@@ -1,0 +1,73 @@
+/* :host {
+    --slds-c-card-color-background: #f4f6f9;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f4f6f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-title {
+    text-align: center;
+    color: #0070d2; 
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lightning-button {
+    --sds-c-button-brand-color-background: #0070d2;
+    --sds-c-button-brand-color-background-hover: #005fb2;
+} */
+:host {
+    --slds-c-card-color-background: #f4f6f9; /* Light background color */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: #f4f6f9; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for good appearance */
+}
+
+.form-title {
+    text-align: center;
+    color: #0070d2; /* Salesforce Blue color */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style lightning buttons */
+.lightning-button {
+    --sds-c-button-brand-color-background: #0070d2;
+    --sds-c-button-brand-color-background-hover: #005fb2;
+}

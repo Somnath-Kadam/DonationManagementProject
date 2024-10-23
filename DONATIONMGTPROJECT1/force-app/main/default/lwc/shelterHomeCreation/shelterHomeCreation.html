@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        <div class="form-container">
+            <h1 class="form-title">Shelter Home Registration Form</h1>
+            <lightning-record-edit-form object-api-name="Shelter_Home__c" onsuccess={handleSuccess}>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-input-field field-name="Name" required></lightning-input-field>
+                        <lightning-input-field field-name="Phone_no__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Email_Id__c" required></lightning-input-field>
+                        <lightning-input-field field-name="UserId__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Password__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Address__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Country__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Zip_code__c" required></lightning-input-field>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <lightning-button label="Create Account" variant="brand" type="submit"></lightning-button>
+                    <lightning-button label="Cancel" variant="destructive" onclick={handleCancel}></lightning-button>
+                    <lightning-button label="Sign In" variant="brand" onclick={handleLogin}></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

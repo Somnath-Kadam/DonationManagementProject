@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        <div class="form-container">
+            <h1 class="form-title">DONOR REG FORM</h1>
+            <lightning-record-edit-form object-api-name="Donor__c" onsuccess={handleSuccess}>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-input-field field-name="Name" required></lightning-input-field>
+                        <lightning-input-field field-name="Donor_Phone_Number__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Donar_Email_Id__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Donor_Type__c" required></lightning-input-field>
+                        <lightning-input-field field-name="UserId__c" required></lightning-input-field>
+                        <lightning-input-field field-name="Password__c" required></lightning-input-field>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <lightning-button label="Create Account" variant="brand" type="submit"></lightning-button>
+                    <lightning-button label="Cancel" variant="destructive" onclick={handleCancel}></lightning-button>
+                    <lightning-button label="Sign In" variant="brand" onclick={handlelogin}></lightning-button>
+                    
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
+

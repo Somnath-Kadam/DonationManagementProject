@@ -1,0 +1,35 @@
+<!-- <template>
+    <lightning-card>
+        <div class="form-container">
+            <h1 class="form-title">Shelter  Login Page</h1>
+            <div class="input-container">
+                <lightning-input label="User Name" name="username" value={username} onchange={handleUsernameChange}></lightning-input>
+                <lightning-input label="Password" name="password" value={password} onchange={handlePasswordChange} type="password"></lightning-input>
+            </div>
+            <div class="button-container">
+                <lightning-button label="Login" variant="brand" onclick={handleLogin}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template> -->
+<template>
+    <lightning-card>
+        <template if:true={showLogin}>
+            <div class="form-container">
+                <h1 class="form-title">Shelter Login Page</h1>
+                <div class="input-container">
+                    <lightning-input label="User Name" name="username" value={username} onchange={handleUsernameChange}></lightning-input>
+                    <lightning-input label="Password" name="password" value={password} onchange={handlePasswordChange} type="password"></lightning-input>
+                </div>
+                <div class="button-container">
+                    <lightning-button label="Login" variant="brand" onclick={handleLogin}></lightning-button>
+                </div>
+            </div>
+        </template>
+
+        <!-- Conditionally render the requestCreation component after successful login -->
+        <template if:true={showRequestCreation}>
+            <c-request-creaction></c-request-creaction>
+        </template>
+    </lightning-card>
+</template>

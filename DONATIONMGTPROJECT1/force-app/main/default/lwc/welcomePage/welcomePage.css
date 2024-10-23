@@ -1,0 +1,24 @@
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size as necessary */
+    height: auto;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+h1 {
+    font-size: 1.5rem;
+}
